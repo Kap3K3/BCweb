@@ -31,10 +31,34 @@ background-position-y: -99px ;
     left: 15%; /* Đẩy h1 ra giữa theo chiều ngang */
     top: 5px; /* Điều chỉnh khoảng cách từ phía trên theo pixel */
 }
+.frm-group1 i {
+    position: relative;
+    left: -20px; /* Đẩy icon về trái */
+    color: #fff
+
+}
+.frm-group2 i {
+    position: relative;
+    left: -20px; /* Đẩy icon về trái */
+    color: #fff
+    
+}
+
+#eye
+{   
+    color: black;
+    display: flex;
+    position: relative;
+    top : -42px;
+    left: 250px;
+ 
+}
+
 
 .frm-group1 input[type="text"],
 .frm-group2 input[type="password"] {
-
+    position: relative;
+    left: -20px; /* Đẩy icon về trái */
     width: 250px; /* Chiều rộng 300px */
     height: 20px; /* Tăng chiều cao ô nhập liệu */
     padding: 10px; /* Thêm padding để ô nhập liệu thoải mái hơn */
@@ -48,8 +72,8 @@ background-position-y: -99px ;
 }
 
 .login_button input[type="submit"]{
+    border: 2px solid white; /* Thêm viền trắng */
     text-transform: uppercase;
-
     font-size: 16px;
     color: rgb(233, 233, 247);
     background: transparent;
