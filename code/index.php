@@ -2,25 +2,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-7">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Đăng nhập</title>
 <link rel="stylesheet" href="login.css"> 
 <link rel="stylesheet" href="/src/themify-icons/themify-icons.css">
 <body>
     <?php
-           $server='localhost';
-           $user='root';
-           $pass='';
-           $database='db_qllinhkien';
-           $conn = new mysqli($server, $user, $pass, $database);
-       
-           if ($conn) {
-               mysqli_query($conn, "SET NAMES 'utf8'");
-               echo 'Đã kết nối thành công';
-           } else {
-               echo 'Kết nối thất bại';
-           }
+        include 'conn.php';
        
     ?>
      <div id="wrapper">

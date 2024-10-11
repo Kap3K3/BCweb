@@ -1,6 +1,6 @@
 body
 {
-background: url('src/img_login2.jpeg');
+/* background: url('src/img_login2.jpeg'); */
 background-size: cover;
 background-position-y: -99px ;
 }
@@ -15,7 +15,7 @@ background-position-y: -99px ;
 {
     width: 320px; /* Rộng hơn */
     height: 320px; /* Ngắn hơn */
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 100, 0, 0.548);
     padding-top: 60px;
     padding-left: 60px;
     box-shadow: 0px 0px 17px 2px rgba(255, 255, 255, 0.8);
@@ -44,19 +44,33 @@ background-position-y: -99px ;
     
 }
 
-#eye
+#lock
 {   
     color: black;
     display: flex;
     position: relative;
     top : -42px;
     left: 250px;
+    cursor: pointer;
  
 }
 
 
-.frm-group1 input[type="text"],
-.frm-group2 input[type="password"] {
+.input-password {
+    position: relative;
+    left: -20px; /* Đẩy icon về trái */
+    width: 250px; /* Chiều rộng 300px */
+    height: 20px; /* Tăng chiều cao ô nhập liệu */
+    padding: 10px; /* Thêm padding để ô nhập liệu thoải mái hơn */
+    margin-bottom: 15px; /* Khoảng cách giữa các ô nhập liệu */
+    border: none; /* Không viền */
+    border-radius: 5px; /* Bo góc cho ô nhập liệu */
+    background: rgba(255, 255, 255, 0.966); /* Màu nền nhẹ */
+    color: rgba(0, 0, 0, 0.548); /* Màu chữ trắng */
+    font-size: 16px; /* Kích thước chữ */
+    
+}
+.input-username {
     position: relative;
     left: -20px; /* Đẩy icon về trái */
     width: 250px; /* Chiều rộng 300px */
