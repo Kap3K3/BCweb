@@ -69,6 +69,24 @@ background-position-y: -99px ;
     cursor: pointer;
  
 }
+#lock1
+{   
+    color: rgb(5, 197, 47);
+    right: 90px;
+    position: absolute;
+    
+    cursor: pointer;
+ 
+}
+#lock2
+{   
+    color: rgba(20, 201, 59, 0.733);
+    right: 90px;
+    position: absolute;
+    
+    cursor: pointer;
+ 
+}
 
 
 .input-password {
