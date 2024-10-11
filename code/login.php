@@ -35,15 +35,15 @@
             $name = $_POST['username'];
             $password = $_POST['pass'];
             if (empty($name)) {
-                echo "Name is empty";
+                echo "Vui lòng nhập tài khoản";
             } else {
                 $sql  =" select * from users where username='".$name."' and password = '".$password."'";
                 $result = mysqli_query($conn, $sql);
                 if (mysqli_num_rows($result) > 0) {
-                    echo "success";
+                    echo "Succeed";
                 }
                 else {
-                    echo "false";
+                    echo "Sai tên tài khoản hoặc mật khẩu";
                 }
             }
         }
