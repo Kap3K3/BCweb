@@ -13,11 +13,15 @@ background-position-y: -99px ;
 }
  #frm-login
 {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 320px; /* Rộng hơn */
     height: 320px; /* Ngắn hơn */
     background: rgba(0, 100, 0, 0.548);
-    padding-top: 60px;
-    padding-left: 60px;
+    padding: 60px;
     box-shadow: 0px 0px 17px 2px rgba(255, 255, 255, 0.8);
 
 
@@ -28,18 +32,30 @@ background-position-y: -99px ;
 {
     color: rgb(255, 255, 255);
     position: relative;
-    left: 15%; /* Đẩy h1 ra giữa theo chiều ngang */
-    top: 5px; /* Điều chỉnh khoảng cách từ phía trên theo pixel */
 }
 .frm-group1 i {
     position: relative;
-    left: -20px; /* Đẩy icon về trái */
+    
     color: #fff
 
 }
+
+.frm-group1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.frm-group2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
 .frm-group2 i {
     position: relative;
-    left: -20px; /* Đẩy icon về trái */
+    
     color: #fff
     
 }
@@ -47,10 +63,9 @@ background-position-y: -99px ;
 #lock
 {   
     color: black;
-    display: flex;
-    position: relative;
-    top : -42px;
-    left: 250px;
+    right: 90px;
+    position: absolute;
+    
     cursor: pointer;
  
 }
@@ -58,11 +73,11 @@ background-position-y: -99px ;
 
 .input-password {
     position: relative;
-    left: -20px; /* Đẩy icon về trái */
+    margin: 10px;
     width: 250px; /* Chiều rộng 300px */
     height: 20px; /* Tăng chiều cao ô nhập liệu */
     padding: 10px; /* Thêm padding để ô nhập liệu thoải mái hơn */
-    margin-bottom: 15px; /* Khoảng cách giữa các ô nhập liệu */
+    /* margin-bottom: 15px; Khoảng cách giữa các ô nhập liệu */
     border: none; /* Không viền */
     border-radius: 5px; /* Bo góc cho ô nhập liệu */
     background: rgba(255, 255, 255, 0.966); /* Màu nền nhẹ */
@@ -72,11 +87,11 @@ background-position-y: -99px ;
 }
 .input-username {
     position: relative;
-    left: -20px; /* Đẩy icon về trái */
+    margin: 10px;
     width: 250px; /* Chiều rộng 300px */
     height: 20px; /* Tăng chiều cao ô nhập liệu */
     padding: 10px; /* Thêm padding để ô nhập liệu thoải mái hơn */
-    margin-bottom: 15px; /* Khoảng cách giữa các ô nhập liệu */
+    /* margin-bottom: 15px; Khoảng cách giữa các ô nhập liệu */
     border: none; /* Không viền */
     border-radius: 5px; /* Bo góc cho ô nhập liệu */
     background: rgba(255, 255, 255, 0.966); /* Màu nền nhẹ */
@@ -86,14 +101,12 @@ background-position-y: -99px ;
 }
 
 .login_button input[type="submit"]{
+    margin: 10px;
     border: 2px solid white; /* Thêm viền trắng */
     text-transform: uppercase;
     font-size: 16px;
     color: rgb(233, 233, 247);
     background: transparent;
-    height: 30px;
-    width: 100%;
+    padding: 10px 15px;
     position: relative;
-    left: -8%; /* Đẩy h1 ra giữa theo chiều ngang */
-    top: 20px; /* Điều chỉnh khoảng cách từ phía trên theo pixel */
 }
