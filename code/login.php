@@ -20,15 +20,9 @@
             <i class="ti-key"> </i>
             <input  type="password" name="pass" id="txb_password" placeholder="Mật khẩu" class="input-password">
             <i class="ti-lock" id="lock"> </i>
-            
-        </div>
-        <div class="login_button">
-            <input type="submit" value="Đăng nhập"> 
-        </div>
-    </form>
-    </div> 
-
-    <?php
+        <br>
+         <div class = "tb">
+         <?php
         include 'conn.php';
         if ($_SERVER["REQUEST_METHOD"] == "POST") {
             // collect value of input field
@@ -43,15 +37,20 @@
                     echo "Succeed";
                 }
                 else {
-                    echo "Sai tên tài khoản hoặc mật khẩu";
+                    echo "Sai tên tài khoản hoặc mật khẩu r";
                 }
             }
         }
-    
-        
-    
+        ?>
+         </div>   
+        </div>
+        <div class="login_button">
+            <input type="submit" value="Đăng nhập"> 
+        </div>
+    </form>
+    </div> 
 
-    ?>
+
 
 </body>
     <script  src="https://code.jquery.com/jquery-3.7.1.js">    </script>
