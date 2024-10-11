@@ -7,9 +7,9 @@
 
     if ($conn) {
         mysqli_query($conn, "SET NAMES 'utf8'");
-        echo 'Đã kết nối thành công rồi';
+        
     } else {
-        echo 'Kết nối thất bại';
+        
     }
 
 ?>

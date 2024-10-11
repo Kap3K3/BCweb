@@ -2,6 +2,9 @@
 html,body {
     margin: 0;
 }
+
+
+
 #wrapper{
     max-width: 100%;
     border: 1px black solid;
@@ -11,22 +14,20 @@ html,body {
 
 #header{
     background: darkgreen;
-    height: 40px;
-    padding: 10px;
+    box-sizing: content-box;
+    padding: 5px 10px;
     
     color: white;
     display: flex;
     flex-flow: row;
     justify-content: space-between;
+    justify-items: center;
+    align-items: center;
     
 }
 
 #user {
-    display: block;
-    background: #ccc;
-    height: 20px;
-    width: 50px;
-    align-self: center;
+    background: white;
 }
 
 #nav-item {
@@ -63,7 +64,13 @@ html,body {
     
 }
 
-#side {
+#side:hover img {
+    
+    box-sizing: border-box;
+    background: rgba(0, 150, 0, 0.8);
+    
+    width: 30px;
+    height: 30px;
     
 }
 
