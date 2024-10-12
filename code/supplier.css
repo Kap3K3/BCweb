@@ -1,0 +1,38 @@
+.btn_them
+{
+    background-color: #4CAF50; /* Màu nền */
+    color: white; /* Màu chữ */
+    padding: 10px 20px; /* Đệm trong */
+    text-align: center; /* Căn giữa chữ */
+    font-size: 16px; /* Kích cỡ chữ */
+    cursor: pointer; /* Hiển thị con trỏ khi hover */
+    border-radius: 12px; /* Bo tròn góc */
+}
+.btn_xoa 
+{
+    background-color: #4CAF50; /* Màu nền */
+    color: white; /* Màu chữ */
+    padding: 10px 20px; /* Đệm trong */
+    text-align: center; /* Căn giữa chữ */
+    font-size: 16px; /* Kích cỡ chữ */
+    cursor: pointer; /* Hiển thị con trỏ khi hover */
+    border-radius: 12px; /* Bo tròn góc */
+}
+.btn_sua
+{
+    background-color: #4CAF50; /* Màu nền */
+    color: white; /* Màu chữ */
+    padding: 10px 20px; /* Đệm trong */
+    text-align: center; /* Căn giữa chữ */
+    font-size: 16px; /* Kích cỡ chữ */
+    cursor: pointer; /* Hiển thị con trỏ khi hover */
+    border-radius: 12px; /* Bo tròn góc */
+    
+}
+
+
+.btn {
+    display: flex;
+    justify-content: left;
+    gap: 10px; /* Khoảng cách giữa các nút */
+}

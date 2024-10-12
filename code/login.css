@@ -137,3 +137,12 @@ background-position-y: -99px ;
     left:90px;
     bottom: 160px;
 }
+.sad{
+
+    display: flex;
+    position: absolute;
+    color: red;
+    font-weight: 700;
+    left:90px;
+    bottom: 160px;
+}

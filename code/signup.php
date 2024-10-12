@@ -9,7 +9,7 @@
 </head> <!-- Đóng thẻ head đúng vị trí -->
 <body>
     <div id="wrapper">
-        <form id="frm-login" method="post" action="signup_conn.php">
+        <form id="frm-login" method="post" action="<?php echo $_SERVER['PHP_SELF'];?>">
             <h1 class="frm-heading">Đăng ký</h1>
             <div class="frm-group1">
                 <i class="ti-user"></i>
@@ -30,6 +30,34 @@
             
             <div class="login_button">
                 <input type="submit" value="Đăng ký" name="btn_submit">
+            </div>
+
+            <div class="sad">
+            <?php
+                require 'conn.php';
+                if (isset($_POST['btn_submit'])) {
+                    $username = $_POST['username'];
+                    $password = $_POST['password'];
+                    $passwordrp = $_POST['passwordrp'];
+                    if (empty($username) || empty($password) || empty($passwordrp)) 
+                        echo "Vui lòng nhập đầy đủ thông tin";
+                    elseif ($password != $passwordrp) 
+                        echo "Mật khẩu nhập lại không chính xác";
+                    else {
+                        echo "<pre>";
+                        print_r($_POST);
+                        echo "</pre>";
+                        $sql="INSERT INTO `users`( `username`, `password`, `permission`, `id_cust`) VALUES ('$username','$password',1,'1')";
+                        if ($conn->query($sql) === TRUE) 
+                            echo "Lưu dữ liệu thành công";
+                         else 
+                            echo "Lỗi: {$sql} - " . $conn->error;
+                        
+                        
+                        }
+                }
+                ?>
+
             </div>
         </form>
     </div>
