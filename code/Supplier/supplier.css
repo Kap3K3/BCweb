@@ -1,0 +1,20 @@
+#btn_them {
+    font-size: 14px;
+    position: relative;
+    left: 100px; /* Di chuyển nút sang phải 20px */
+    top:20px;
+}
+#btn_capnhat {
+    font-size: 14px;
+    position: relative;
+    left: 110px; /* Di chuyển nút sang phải 20px */
+    top:20px;
+}
+
+.input_add {
+    padding: 20px; /* Khoảng cách bên trong div */
+    margin: 20px;  /* Khoảng cách bên ngoài div */
+}
+.input_add table td {
+    padding: 3px; /* Giãn cách giữa các ô trong bảng */
+}
